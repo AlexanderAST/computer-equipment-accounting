@@ -36,3 +36,4 @@ if __name__ == "__main__":
     add_equipment("ИНВ-0003", "Принтер HP LaserJet", "Кабинет 101", "Сидорова А. В.")
     show_all()
     print(find_equipment("ИНВ-0002"))
+    print("Завершено")
