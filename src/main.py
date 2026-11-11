@@ -24,6 +24,12 @@ def show_all():
               item["responsible"], item["status"])
 
 
+def write_off(inventory_number):
+    item = find_equipment(inventory_number)
+    if item is not None:
+        item["status"] = "списано"
+        
+
 if __name__ == "__main__":
     add_equipment("ИНВ-0001", "Ноутбук Lenovo ThinkPad", "Кабинет 204", "Петров И. И.")
     add_equipment("ИНВ-0002", "Монитор Samsung 24", "Кабинет 204", "Петров И. И.")
